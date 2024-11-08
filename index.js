@@ -1,11 +1,11 @@
-let array = [];  // Mảng chứa số nguyên người dùng nhập vào
+let array = [];
 
 function addList() {
   const input = document.getElementById('inp').value;
   if (!isNaN(input) && input !== '') {
     array.push(Number(input));
     document.getElementById('list').innerText = JSON.stringify(array);
-    document.getElementById('inp').value = '';  // Xóa ô nhập sau khi thêm
+    document.getElementById('inp').value = '';  
   } else {
     alert('Nhập một số nguyên hợp lệ!');
   }
