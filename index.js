@@ -7,7 +7,7 @@ function addList() {
     document.getElementById('list').innerText = JSON.stringify(array);
     document.getElementById('inp').value = '';  // Xóa ô nhập sau khi thêm
   } else {
-    alert('Vui lòng nhập một số nguyên hợp lệ!');
+    alert('Nhập một số nguyên hợp lệ!');
   }
 }
 
@@ -36,7 +36,7 @@ function positiveNumberCount() {
 // 3. Tìm số nhỏ nhất trong mảng
 function findSmallestNumber() {
   if (array.length === 0) {
-    alert('Mảng trống');
+    alert('Mảng khồng có phần tử');
     return;
   }
   let min = array[0];
@@ -86,7 +86,7 @@ function swapElements() {
   }
 }
 
-// 7. Sắp xếp mảng theo thứ tự tăng dần
+// 7.Sắp xếp mảng theo thứ tự tăng dần
 function sortArray() {
   for (let i = 0; i < array.length - 1; i++) {
     for (let j = i + 1; j < array.length; j++) {
@@ -101,7 +101,7 @@ function sortArray() {
   alert('Mảng đã được sắp xếp tăng dần');
 }
 
-// 8. Tìm số nguyên tố đầu tiên trong mảng
+// 8.Tìm số nguyên tố đầu tiên trong mảng
 function findFirstPrime() {
   const isPrime = num => {
     if (num < 2) return false;
